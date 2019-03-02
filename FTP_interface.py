@@ -65,6 +65,9 @@ class Ui_MainWindow(object):
         font.setPointSize(14)
         self.ftpserver.setFont(font)
         self.ftpserver.setObjectName(_fromUtf8("ftpserver"))
+        self.status = QtGui.QLabel(self.centralwidget)
+        self.status.setGeometry(QtCore.QRect(20, 620, 351, 16))
+        self.status.setObjectName(_fromUtf8("status"))
         self.con = QtGui.QPushButton(self.centralwidget)
         self.con.setGeometry(QtCore.QRect(240, 5, 131, 51))
         font = QtGui.QFont()
@@ -78,7 +81,7 @@ class Ui_MainWindow(object):
         self.treeWidget = QtGui.QTreeWidget(self.centralwidget)
         self.treeWidget.setGeometry(QtCore.QRect(0, 70, 391, 481))
         self.treeWidget.setStyleSheet("background-image: url(:/images/background.png);")
-        self.treeWidget.setObjectName("treeWidget")
+        self.treeWidget.setObjectName("allfiles")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
